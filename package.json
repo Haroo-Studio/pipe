@@ -1,0 +1,22 @@
+{
+  "name": "pipe",
+  "version": "0.0.1",
+  "description": "core api for haroo products",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Haroo-Studio/pipe"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "soomtong@gmail.com",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Haroo-Studio/pipe/issues"
+  },
+  "homepage": "https://github.com/Haroo-Studio/pipe"
+}
