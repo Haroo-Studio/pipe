@@ -1,6 +1,13 @@
+var database = require('./config/database');
+var mongoose = require('mongoose');
+
+mongoose.connect(database['mongo'].host);
+mongoose.connection.on('error', function () {
+    console.error('MongoDB Connection Error. Make sure MongoDB is running.');
+});
+
 module.exports = {
-    HarooCode: require('./code'),
-    CommonUtil: require('./common'),
-    Account: require('./model/account'),
-    AccountInit: require('./model/accountInit')
+    HarooCode: require('./lib/code'),
+    CommonUtil: require('./lib/common'),
+    Account: require('./lib/account')
 };

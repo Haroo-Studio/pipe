@@ -27,7 +27,7 @@ var accountSchema = new mongoose.Schema({
     tokens: Array,
 
     profile: {
-        name: { type: String, default: '' },
+        nickname: { type: String, default: '' },
         gender: { type: String, default: '' },
         location: { type: String, default: '' },
         website: { type: String, default: '' },
