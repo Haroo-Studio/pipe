@@ -104,3 +104,7 @@ build/Release
 node_modules
 
 
+# secrets
+config/database.json
+config/passport.json
+config/mailer.json

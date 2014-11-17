@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/Haroo-Studio/pipe/issues"
   },
-  "homepage": "https://github.com/Haroo-Studio/pipe"
+  "homepage": "https://github.com/Haroo-Studio/pipe",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "init-user": "git://github.com/haroo-studio/init-user.git",
+    "mongoose": "^3.8.19",
+    "nano": "^6.0.1",
+    "node-uuid": "^1.4.1",
+    "nodemailer": "^1.3.0"
+  }
 }
