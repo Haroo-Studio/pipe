@@ -1,5 +1,6 @@
 var database = require('./config/database');
 var mongoose = require('mongoose');
+var passportLoader = require('./lib/passport');
 
 mongoose.connect(database['mongo'].host);
 mongoose.connection.on('error', function () {
@@ -9,5 +10,6 @@ mongoose.connection.on('error', function () {
 module.exports = {
     HarooCode: require('./lib/code'),
     CommonUtil: require('./lib/common'),
-    Account: require('./lib/account')
+    Account: require('./lib/account'),
+    Passport: require('passport')
 };
