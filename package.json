@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Haroo-Studio/pipe",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
+    "cuid": "^1.2.4",
     "init-user": "git://github.com/haroo-studio/init-user.git",
     "lodash": "^2.4.1",
     "mongoose": "^3.8.19",
