@@ -1,7 +1,3 @@
-/**
- * Created by soomtong on 2014. 7. 3..
- */
-
 var mongoose = require('mongoose');
 
 var loggingSchema = new mongoose.Schema({
@@ -16,4 +12,4 @@ var loggingSchema = new mongoose.Schema({
     check_token: Date
 });
 
-module.exports = mongoose.model('Log', loggingSchema);
+module.exports = mongoose.model('account_log', loggingSchema);

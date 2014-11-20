@@ -1,18 +1,12 @@
-/**
- * Created by soomtong on 2014. 7. 3..
- */
-
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt-nodejs');
 var crypto = require('crypto');
 
 var accountSchema = new mongoose.Schema({
-    access_token: { type: String, unique: true, index: true },
     haroo_id: { type: String, unique: true, index: true },
     email: { type: String, unique: true, index: true, lowercase: true },
     password: String,
     db_host: String,
-    login_expire: String,
 
     created_at: Date,
     updated_at: Date,
@@ -75,4 +69,4 @@ accountSchema.methods.gravatar = function(size) {
     return 'https://gravatar.com/avatar/' + md5 + '?s=' + size + '&d=retro';
 };
 
-module.exports = mongoose.model('Account', accountSchema);
+module.exports = mongoose.model('account', accountSchema);
