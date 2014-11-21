@@ -11,5 +11,6 @@ module.exports = {
     HarooCode: require('./lib/code'),
     CommonUtil: require('./lib/common'),
     Account: require('./lib/account'),
+    AccountToken: require('./lib/accountToken'),
     Passport: require('passport')
 };
