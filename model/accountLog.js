@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
 
 var loggingSchema = new mongoose.Schema({
-    email: { type: String, index: true, lowercase: true },
+    email: { type: String, index: true },
     token: { type: String, index: true },
+    haroo_id: { type: String, index: true },
+    accessed_at: Date,
     created_at: Date,
     updated_at: Date,
     removed_at: Date,
