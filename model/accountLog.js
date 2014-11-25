@@ -9,6 +9,7 @@ var loggingSchema = new mongoose.Schema({
     unlinked_at: Date,
     signed_in: Date,
     signed_out: Date,
+    reset_password: Date,
     check_token: Date
 });
 
