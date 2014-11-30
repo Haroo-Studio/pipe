@@ -70,10 +70,34 @@ exports.isThisTokenExpired = function (t) {
 };
 
 exports.makeHarooID = function (t) {
+    var database = {
+        "mongo": {
+            "host": "mongodb://localhost:27017/test",
+            "id": "hello",
+            "pass": "world"
+        },
+        "couch": {
+            "host": "db1.haroopress.com",
+            "port": "80",
+            "id": "a",
+            "pass": "1"
+        }
+    };
     t.expect(1);
     var email = 'soomtong@gmail.com';
-    var validHarooID = CommonUtil.initHarooID(email);
+    var validHarooID = CommonUtil.initHarooID(email, database);
 
-    t.equal(validHarooID, CommonUtil.initHarooID(email));
+    t.equal(validHarooID, CommonUtil.initHarooID(email, database));
+    t.done();
+};
+
+exports.makeZeroFill = function (t) {
+    t.expect(6);
+    t.equal(CommonUtil.makeZeroFill(), '001');
+    t.equal(CommonUtil.makeZeroFill(4), '004');
+    t.equal(CommonUtil.makeZeroFill(14), '014');
+    t.equal(CommonUtil.makeZeroFill(414), '414');
+    t.equal(CommonUtil.makeZeroFill(8414), '8414');
+    t.equal(CommonUtil.makeZeroFill(6, 4), '0006');
     t.done();
 };
