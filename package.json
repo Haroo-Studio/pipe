@@ -1,6 +1,6 @@
 {
   "name": "pipe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "core api for haroo products",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Haroo-Studio/pipe",
   "dependencies": {
+    "MD5": "^1.2.1",
     "bcrypt-nodejs": "0.0.3",
     "cuid": "^1.2.4",
     "init-user": "git://github.com/haroo-studio/init-user.git",
