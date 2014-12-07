@@ -1,6 +1,6 @@
 {
   "name": "pipe",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "core api for haroo products",
   "main": "index.js",
   "scripts": {
