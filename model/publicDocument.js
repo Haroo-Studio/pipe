@@ -6,6 +6,7 @@ var publicDocSchema = new mongoose.Schema({
     haroo_id: { type: String, index: true },
     document_id: { type: String, index: true },
     public: Boolean,
+    viewCount: { type: Number, default: 0 },
     subscribe_user: Array
 });
 
