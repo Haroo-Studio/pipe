@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "host": "mongodb://localhost:27017/test",
+    "id": "hello",
+    "pass": "world"
+  },
+  "couch": {
+    "host": "localhost",
+    "port": "7890",
+    "id": "id",
+    "pass": "pw"
+  }
+}

@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var database = require('../config/database');
+var database = require('./config');
 
 var Account = require('../lib/account');
 
